@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Typing Speed Test</title>
+    <meta name="description" content="This Is A Typing Speed Test" />
+  </head>
+  <body>
+    <div class="container game">
+      <div class="game-name">Typing Speed Test Game</div>
+      <div class="game-body">
+        <div class="control-box none-class">
+          You Are Playing On <span class="current-level">[ ]</span> Level & You
+          Have <span class="type-word-time">[ ]</span> Seconds To Type The Word
+        </div>
+        <form action="" class="form">
+          <select name="level-selection" id="level">
+            <option value="easy" selected>Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+          <input
+            type="submit"
+            value="Start"
+            name="submit"
+            id="submit"
+            class="start-btn"
+          />
+        </form>
+        <label for="word" class="current-word none-class"></label>
+        <input id="word" type="text" class="enter-word none-class" />
+        <div class="words-container none-class"></div>
+        <div class="timer-div none-class">
+          <div class="timer-box">
+            Time Left: <span class="timer">0</span> Seconds
+          </div>
+          <div class="score-box">
+            Score: <span class="score-number">0</span> From
+            <span class="words-length">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

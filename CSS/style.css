@@ -1,0 +1,222 @@
+/* Reset and Global Styles */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Container Styles */
+.container {
+  margin: 0 auto;
+  background-color: #eee;
+  min-height: 100vh;
+}
+
+/* Responsive Container Sizes */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    min-height: fit-content;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Game Name Styles */
+.game-name {
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  background-color: #0097d8;
+  color: white;
+}
+
+/* Game Body Styles */
+.game-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Game Body Styles */
+@media (max-width: 767px) {
+  .game-body {
+    width: 100%;
+    padding: 15px;
+    gap: 15px;
+  }
+}
+
+/* Control Box Styles */
+.game-body .control-box {
+  font-size: 1.2rem;
+  font-weight: 300;
+  background-color: white;
+  border-radius: 4px;
+  padding: 15px;
+}
+.game-body .control-box.none-class {
+  display: none;
+}
+.game-body .control-box span {
+  color: #18865f;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Responsive Form Styles */
+@media (max-width: 767px) {
+  form {
+    gap: 15px;
+  }
+}
+
+/* Form Input Styles */
+form #level,
+form .start-btn,
+form .enter-word {
+  outline: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+form #level {
+  border: none;
+}
+
+form .start-btn {
+  background-color: #18865f;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.current-word {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #0097d8;
+}
+.current-word.none-class {
+  display: none;
+}
+.enter-word {
+  outline: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 3px solid #0097d8;
+  color: #0097d8;
+  caret-color: #0097d8;
+}
+.enter-word.none-class {
+  display: none;
+}
+
+/* Words Container Styles */
+.game-body .words-container {
+  padding: 15px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  min-height: 50px;
+}
+
+.game-body .words-container.none-class {
+  display: none;
+}
+.game-body .words-container span {
+  background-color: #0097d8;
+  border-radius: 4px;
+  padding: 8px 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+/* Timer Styles */
+.game-body .timer-div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: white;
+  border-radius: 4px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+}
+.game-body .timer-div.none-class {
+  display: none;
+}
+.game-body .timer-div div span {
+  color: #18865f;
+  font-weight: 700;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 450px) {
+  .game-name {
+    font-size: 1.5rem;
+  }
+  .game-body .control-box {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  form .start-btn {
+    font-size: 1.5rem;
+  }
+  form #level {
+    font-size: 1rem;
+  }
+  .current-word {
+    font-size: 1.5rem;
+  }
+  form .enter-word {
+    font-size: 1rem;
+  }
+  .game-body .words-container {
+    padding: 10px;
+  }
+}
