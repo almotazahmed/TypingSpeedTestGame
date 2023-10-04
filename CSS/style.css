@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  position: relative;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -193,6 +194,50 @@ form .start-btn {
 .game-body .timer-div div span {
   color: #18865f;
   font-weight: 700;
+}
+
+.finish {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.finish-popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid #0097d8;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 4px lightgray;
+  text-align: center;
+  width: 400px;
+  max-width: calc(100% - 30px);
+}
+.finish-popup .status {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.finish-popup .status span {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #136c4d;
+}
+.finish-popup .btn {
+  background-color: #0097d8;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.finish-popup .btn:hover {
+  background-color: #0078ab;
 }
 
 /* Responsive Styles for Small Screens */
